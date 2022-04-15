@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            REGISTRATION FORM
+        </title>
+    </head>
+    <style>
+        *{
+            color: green;background-color: greenyellow;
+        }/*by using star we can change the style of all element in a single line*/
+        .hello input{
+            display: block;
+        }
+    </style>
+    <body>
+        <form class="hello">
+            <label for="fname">fist name</label><br>
+            <input type="text" id="fname",name="username"><br><br>
+            <label for="lname">last name</label><br>
+            <input type="text" id="lname"><br><br>
+            <label for="pwd">password</label><br>
+
+
+            <input type="password" id="fname",name="pwd"><br><br>
+            <!--the value attribute is used to define the value in that checkbox if nothing is written in-->
+            <input type="radio" id="html" name="fav_language" value="HTML"><!--here we used br tag at the end of this statement it will appear different-->
+            <label for="html">HTML</label><br><br>
+            <input type="radio" id="css" name="fav_language">
+            <label for="css">CSS</label><br><br>
+            <input type="radio" id="javascript" name="fav_language" value="JAVASCRIPT"><!--if you want to use a value attribute you can use here but in this no need to use it bcoz we have to tick tehcorrct one of our choice-->
+            <label for="javascript">JAVASCRIPT</label><br><br>
+            <input type="checkbox" id="vehicle1"name="vehicle1">
+            <label for="vehicle1">I HAVE A BIKE</label><br><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2">
+            <label for="vehicle2">I HAVE A CAR</label><br><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3"><!--while using check box as input we can choose multiple option depend on our need-->
+            <label for="vehicle3">I HAVE A BOAT</label><BR><BR>
+            <input type="submit" value="submit"><br><br>
+            <input type="button" onclick="alert('hello Naman hoaw are you?')" value="CLICK ME"><br><br><!--the button is used to send user a message when he click in a button-->
+            <label for="fav_color">for favourite color</label>
+            <input type="color" id="fav_color" name="fav_color">
+            <input type="submit" value="submit"><br><br>
+            <label for="birthday">BIRTHDAY</label>
+            <input type="date" id="birthday" name="birthday">
+            <input type="submit" value="submit"><br><br> 
+            <label for="maxdate">enter a date before 1980-12-31:</label>
+            <input type="date" id="maxdate" name="maxdate" max="1980-12-31">
+            <input type="submit" value="submit"><br><br>
+            <label for ="mindate">enter a date after 2020-12-31:</label>
+            <input type="date" id="mindate" name="mindate" min="2020-12-31">
+            <input type="submit" value="submit"><br><br>
+            <label for="date_and_time">birth date and time</label>
+            <input type="datetime-local" id="date_and_time" name="date_and_time">
+            <input type="submit" value="submit"><br><br>            
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="submit"><br><br>
+            <label for="myfile">choose a file</label>
+            <input type="file" id="myfile" name="myfile">
+            <input type="submit" value="submit">
+            <label for="email">Enter Your E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="abc@gmail.com"><br><br>
+            <input type="reset"><br>
+
+        </form>
+
+    </body>
+</html>
